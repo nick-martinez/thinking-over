@@ -1,0 +1,29 @@
+/* FONT-FAMILY: Abel */
+@font-face {
+  font-family: Abel;
+  src: url('../Fonts/Abel/Abel-Regular.ttf');
+}
+
+/* FONT-FAMILY: Dancing */
+@font-face {
+  font-family: Dancing;
+  src: url('../Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+
+/* FONT-FAMILY: Lexend */
+@font-face {
+  font-family: Lexend;
+  src: url('../Fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+/* FONT-FAMILY: Oxygen */
+@font-face {
+  font-family: Oxygen;
+  src: url('../Fonts/Oxygen/Oxygen-Regular.ttf');
+}
+
+/* FONT-FAMILY: Raleway */
+@font-face {
+  font-family: Raleway;
+  src: url('../Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}

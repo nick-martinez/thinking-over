@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;600&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  color:black;
+}
+
+html, body {
+  margin: 0;
+  pad: 0;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-flex;
+  padding: 1.75em;
+  color: ivory;
+  text-decoration: overline underline solid #2d9cdb;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-header {
+  background-image: url(Images/Ye.png);
+  background-blend-mode: lighten;
+  background-size: 50%;
+  background-image: cover;
+  padding-bottom: 2px;
+}
+
+.blog-title {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  color: ivory;
+}
+
+.blog-title-line {
+  text-align: center;
+  font-size: 4em;
+  color: ivory;
+}
+
+.content-section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 2.12em;
+  color: lime;
+}
+
+.home-content {
+  font-size: 1.25em;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.rhetorical-questions {
+  display: block;
+  font-style: italic;
+}
+
+.rhetorical-answer {
+  margin-bottom: 0.25mm;
+}
+
+.made-by {
+  font-style: italic;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1em;
+}
+
+.main-footer {
+  background-color:steelblue;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container {
+  flex-grow: 10;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 .75em;
+}
+
+.footer-nav img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10%;
+}
+
+.social-title {
+  color: darkblue;
+  padding: 2em;
+}
+
+.caption {
+  font-size: 0.5em;
+  display: inline;
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .5em;
+  cursor: pointer;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+
+  padding: 0.25in 0;
+
+  border-style: solid;
+  border-color: navy;
+}
+
+article * {
+  grid-column: start / end;
+}
+
+@media (max-width: 10.5in) {
+  article {grid-template-columns: 1fr 5% [start] 10% 70% 10% [end] 5% 1fr;}
+}
+
+.blog-content-title {
+  vertical-align: center;
+  text-align: center;
+  align-items: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black;
+  font-size: 0.6em;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-pic {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.songs-played {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+}
+
+.songs-list {
+  display: contents;
+  font-size: 0.5em;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-date {
+  font-size: 0.42em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.btn-new-blog {
+  margin:0 auto;
+  vertical-align: left;
+  color: #333;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 0.5em;
+  font-weight: lighter;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btn-submit-blog {
+  display: block;
+  margin:0 auto;
+  color: #333;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 1.0em;
+  font-weight: bold;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.warning {
+  color: red;
+  font-size: 100px;
+}

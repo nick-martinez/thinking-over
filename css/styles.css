@@ -1,0 +1,1093 @@
+@import url('../css/fonts.css');
+
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  /* Theme colors */
+  --text-grey: #3f4954;
+  --text-cream: #f4f1de;
+  --text-bluegrey: #6c8ead;
+
+  /* Gradient colors */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+
+/*------------- GLOBAL -------------*/
+* {
+  box-sizing: border-box;
+  color:black;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #242423;
+  text-decoration: underline solid white 1px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+ 
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Raleway);
+  cursor: pointer;
+}
+
+span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.text-grey {
+  color: var(--text-grey);
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*-----X------- GLOBAL ------X-------*/
+
+
+/*------------ HEADER PIC -----------*/
+.main-header {
+  background-image: url(../images/Ye.png);
+  background-blend-mode: lighten;
+  background-size: 50%;
+  image-resolution: 100%;
+  height: 40vh;
+}
+/*-----X------ HEADER PIC -----X-----*/
+
+
+/*------------- NAVBAR -------------*/
+.nav {
+  display: block;
+  padding: 0 10px;
+  height: 0;
+  min-height: 27vh;
+  overflow-wrap: none;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+  flex-direction: column;
+  align-content: center;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 24px;
+  color: var(--text-grey);
+}
+
+.collapse {
+  height: 40vh;
+}
+
+.nav .nav-items {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-cream);
+}
+
+.nav .nav-items .nav-link {
+  font-size: 28px;
+  padding: 0;
+  position: relative;
+  color: var(--text-cream);
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: midnightblue;
+  border-radius: 0.8rem;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: var(--text-cream);
+}
+
+.nav .nav-brand  {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav .social {
+  padding: 8px 0;
+}
+
+.nav .social i {
+  padding: 0 16px;
+}
+
+.nav .social i:hover {
+  color: #a1c4cf
+}
+/*-----X------ NAVBAR ------X------*/
+
+
+/*----------- MAIN CONT ------------*/
+/*---------- site title -----------*/
+main .site-title {
+  background: #C2C7CA;
+  display: flex;
+  justify-content: center;
+  font-family: var(--Lexend);
+  opacity: 80%;
+}
+
+main .site-title .site-background {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+main .site-title h1 {
+  color: #324376;
+}
+
+main .site-title h2 {
+  margin: 0.5rem;
+}
+
+main .home-pic {
+  margin: 2em;
+  height: 18vh;
+}
+/*-----X---- site title ----X------*/
+
+/*------- blog carousel -------*/
+main .blog {
+  position: relative;
+}
+
+main .blog::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: url(../images/back-mat.jpg);
+  position: absolute;
+  opacity: 22%;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  height: 90vh;
+  width: 100%;
+  background-size: 80%;
+}
+
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.9);
+  min-height: 64vh;
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+main .blog-content span{
+  display: block;
+}
+
+main .blog-content .caro-pic {
+  min-height: 20vh;
+  max-height: 34vh;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev, .owl-nav .owl-next .owl-nav-next {
+  color: var(--text-grey);
+  background: transparent;
+  font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: var(--text-grey);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  outline: none;
+}
+/*---X---- blog carousel ---X----*/
+
+/*-------- site content --------*/
+main .site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+main .post-content {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+main .site-content .post-content > .post-image, .post-title {
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+main .site-content .post-content > .cont-pic {
+  max-height: 20vh;
+}
+
+main .site-content .post-content > .post-image .post-info {
+  background: var(--sky);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 20vw;
+  border-radius: 3rem;
+}
+
+main .site-content  .post-content > .post-image > div {
+  overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover {
+  transform: scale(1.3);
+}
+
+main .site-content .post-content > .post-image .post-info span {
+  margin: 0.5rem;
+}
+
+main .post-content .post-title a {
+  font-family: var(--Raleway);
+  font-size: 1.5rem;
+}
+
+main .site-content .post-content .post-title .post-btn {
+  border-radius: 0;
+  padding: 0.7rem 1.5rem;
+  background: var(--sky);
+}
+
+.site-content .pagination {
+  justify-content: center;
+  color: var(--text-grey);
+  margin: 4rem 0;
+}
+
+.site-content .pagination a {
+  padding: 0.6rem 0.9rem;
+  border-radius: 2rem;
+  margin: 0.3rem;
+  font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages {
+  background-color: var(--text-grey);
+  color: white;
+}
+/*---X---- site content ---X----*/
+
+/*-------- sidebar --------*/
+.site-content > .sidebar .category-list {
+  font-family: var(--Livvic);
+}
+
+.site-content > .sidebar .category-list .list-items {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+  color: black;
+}
+
+.site-content .sidebar .popular-post .post-content {
+  padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2 {
+  padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info {
+  padding: 0.4rem 0.1rem !important;
+  bottom: 0rem !important;
+  left: 1.5rem !important;
+  border-radius: 0rem !important;
+  background: white !important;
+}
+
+.site-content .sidebar .popular-post .post-title a {
+  font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter {
+  padding-top: 10rem;
+}
+
+.site-content .sidebar .newsletter .form-element {
+  padding: 0.5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input {
+  width: 80%;
+  height: 1.9rem;
+  padding: 0.3rem 0.5rem;
+  font-family: var(--Lexend);
+  font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn {
+  border-radius: 0;
+  padding: 0.8rem 32%;
+  margin: 1rem 0;
+  background: var(--sky);
+}
+
+.site-content .sidebar .popular-tags {
+  padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem 0.6rem;
+}
+/*---X---- sidebar ---X----*/
+/*-----X----- MAIN CONT -----X------*/
+
+
+/*----------- FOOTER ------------*/
+footer.footer {
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+  color: white;
+}
+footer.footer .container p {
+  color: whitesmoke;
+}
+
+footer.footer .newsletter .form-element {
+  background: black;
+  display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: var(--Josefin);
+  font-size: 1rem;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+footer.footer .instagram div > a > img {
+  display: inline-block;
+  width: 35%;
+  height: 70%;
+  margin: 0.3rem 0.4rem;
+}
+
+footer.footer .follow div i {
+  color: white;
+  padding: 0 1rem;
+}
+
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span {
+  color: midnightblue;
+}
+
+footer.footer .move-up span:hover {
+  color: white;
+  cursor: pointer;
+}
+/*-----X----- FOOTER -----X------*/
+
+/*----------- ABOUT ------------*/
+.about-pic {
+  max-height: 20vh;
+  opacity: 100%;
+  background: none;
+}
+/*-----X----- ABOUT -----X------*/
+
+
+/*------- VIEWPORT LT OR EQ 1130px -------*/
+@media only screen and (max-width: 1130px) {
+  .site-content .post-content > .post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*---X--- VIEWPORT LT OR EQ 1130px ---X---*/
+
+
+/*------- VIEWPORT LT OR EQ 750px -------*/
+@media only screen and (max-width: 750px) {
+  .main-header {
+    background-image: url(../images/Ye.png);
+    background-blend-mode: lighten;
+    background-size: cover;
+    image-resolution: 100%;
+    justify-self: center;
+    min-height: 44vh;
+  }
+
+  .nav .nav-menu, .nav .nav-items {
+    flex-direction: column;
+    color: white;
+  }
+
+  .nav {
+    display: block;
+    margin-bottom: 10vh;
+    min-height: 27vh;
+    overflow-wrap: none;
+    transition: height 1s ease-in-out;
+    color: white;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  main .site-content {
+    grid-template-columns: 100%;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*---X--- VIEWPORT LT OR EQ 750px ---X---*/
+
+
+/*------- VIEWPORT LT OR EQ 520px -------*/
+@media only screen and (max-width: 520px) {
+  main .blog {
+    height: 125vh;
+  }
+
+  .main-header {
+    background-image: url(../images/Ye.png);
+    background-blend-mode: lighten;
+    background-size: cover;
+    image-resolution: 100%;
+    justify-self: center;
+  }
+
+  .site-content .post-content > .post-image .post-info {
+    display: none;
+  }
+
+  footer.footer .container > div {
+    padding: 1rem 0.9rem !important;
+  }
+
+  nav .toggle-collapse {
+    width: 80% !important;
+  }
+}
+/*---X--- VIEWPORT LT OR EQ 520px ---X---*/
+
+
+
+
+
+
+
+/* PREVIOUS SHIT
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-flex;
+  padding: 5px;
+  color: ivory;
+  text-decoration: overline underline solid #2d9cdb;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+  padding: 0 10%;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-header {
+  background-image: url(Images/Ye.png);
+  background-blend-mode: lighten;
+  padding-bottom: 2px;
+  background-size: cover;
+  image-resolution: 100%;
+}
+
+.thinking-banner {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 200px;
+  block-size: 160px;
+  image-resolution: 100%;
+}
+
+.content-section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 12.2px;
+  color: lime;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.home-content {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.home-pic {
+  display: block;
+  max-width: 100px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.rhetorical-questions {
+  margin-top: 10px;
+  display: block;
+  font-style: italic;
+}
+
+.made-by {
+  font-style: italic;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 10px;
+}
+
+.main-footer {
+  background-color:steelblue;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.main-footer-container {
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+}
+
+.footer-nav li {
+  padding: 0 0.25px;
+}
+
+.footer-nav img {
+  width: 24px;
+  height: 24px;
+  border-radius: 10%;
+}
+
+.social-title {
+  text-align: center;
+  color: darkblue;
+  font-size: 15px;
+}
+
+.thinking-banner-bottom {
+  width: 150px;
+  height: 150px;
+  block-size: 135px;
+  image-resolution: 100%;
+}
+
+.caption {
+  font-size: 8.8px;
+  display: inline;
+  text-align: center;
+  color: #333;
+  font-weight: lighter;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .5em;
+  cursor: pointer;
+}
+
+article {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+
+  padding: 0.25in 0;
+
+  border-style: solid;
+  border-color: navy;
+}
+
+article * {
+  grid-column: start / end;}
+
+
+@media (max-width: 10.5in) {
+  article {grid-template-columns: 1fr 5% [start] 10% 70% 10% [end] 5% 1fr;}
+}
+
+.blog-content-title {
+  margin-top: 12px;
+  vertical-align: center;
+  text-align: center;
+  align-items: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-pic {
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.songs-played {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.songs-list {
+  display: contents;
+  font-size: 10px;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-date {
+  font-size: 8px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.btn-new-blog {
+  color: #333;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 0.4em;
+  font-weight: lighter;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.btn-submit-blog {
+  display: block;
+  margin:0 auto;
+  color: #333;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 0.4em;
+  font-weight: lighter;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.warning {
+  color: red;
+  font-size: 20px;
+}
+
+.mantra {
+  font-weight: bold;
+}
+
+.on-page-highlight {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    background-image: url(Images/Ye.png);
+    background-blend-mode: lighten;
+    padding-bottom: 2px;
+    background-size: 50%;
+    image-resolution: 100%;
+  }
+
+  .thinking-banner {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+    block-size: 450px;
+    image-resolution: 100%;
+  }
+
+  .nav a {
+    display: inline-flex;
+    padding: 10px;
+    color: ivory;
+    text-decoration: overline underline solid #2d9cdb;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .main-nav {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .main-nav li {
+    padding: 0 10%;
+  }
+
+  .home-content {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;;
+  }
+
+  .home-pic {
+    display: block;
+    max-width: 180px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+  }
+
+  .made-by {
+    font-style: italic;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+  }
+  
+  .rhetorical-questions {
+    margin-top: 25px;
+    display: block;
+    font-style: italic;
+  }
+
+  .section-header {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: bolder;
+    font-size: 35.6px;
+    color: lime;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-footer-container {
+    display: inline-flex;
+    margin: 0 200px;
+    padding: 0 1.5em;
+    align-items: center;
+    padding: 0 1.5em;
+  }
+
+  .thinking-banner-bottom {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 300px;
+    block-size: 200px;
+    image-resolution: 100%;
+    padding-left: 70px;
+  }
+
+  .footer-nav li {
+    padding: 0 22px;
+  }
+  
+  .footer-nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+  }
+  
+  .social-title {
+    text-align: center;
+    color: darkblue;
+    padding-left: 250px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+  
+    padding: 0.25in 0;
+  
+    border-style: solid;
+    border-color: navy;
+  }
+
+  .blog-content-title {
+    margin-top: 15px;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .blog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    font-size: 1.25em;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .songs-played {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+  }
+  
+  .songs-list {
+    display: contents;
+    font-size: 1em;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .blog-date {
+    font-size: 0.75em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+
+  .caption {
+    font-size: 14px;
+    display: inline;
+    text-align: center;
+    color: #333;
+    font-weight: lighter;
+  }
+  
+  .btn-new-blog {
+    color: #333;
+    border: 2px solid #2d9cdb;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .btn-submit-blog {
+    display: block;
+    margin:0 auto;
+    color: #333;
+    border: 2px solid #2d9cdb;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 1.0em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  
+  .warning {
+    color: red;
+    font-size: 100px;
+  }
+  
+  .mantra {
+    font-weight: bold;
+  }
+  .blog-pic {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+*/
